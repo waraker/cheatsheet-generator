@@ -1,0 +1,208 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #575757;
+	margin: 10px 13px 10px 13px;
+}
+
+a{
+	color: #0069d6;
+}
+
+a: hover{
+	color: #0050a3;
+	text-decoration: none;
+}
+
+a img{
+	border: none;
+}
+
+p{
+	margin-bottom: 9px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: #404040;
+}
+
+h1{
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+h3{
+	font-size: 14px;
+}
+
+h4{
+	font-size: 14px;
+}
+
+h5{
+	font-size: 14px;
+}
+
+h6{
+	font-size: 14px;
+}
+
+hr{
+	margin: 24px 0 36px 0;
+	border: 0;
+	border-bottom: 1px dashed #7f7f7f;
+}
+
+blockquote{
+	padding: 13px 13px 21px 15px;
+	margin-bottom: 18px;
+	font-family: georgia,serif;
+	font-style: italic;
+}
+
+blockquote: before{
+	content: "\201C";
+	font-size: 40px;
+	margin-left: -10px;
+	font-family: georgia,serif;
+	color: #eee;
+}
+
+blockquote p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 18px;
+	margin-bottom: 0;
+	font-style: italic;
+}
+
+code, pre{
+	font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+
+code{
+	background-color: #fee9cc;
+	color: rgba(0, 0, 0, 0.75);
+	padding: 1px 3px;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+pre{
+	border-radius: 3px;
+	background-color: #fafafa;
+	display: block;
+	padding: 6px 6px 6px 12px;
+	margin: 0 0 18px;
+	line-height: 16px;
+	font-size: 14px;
+	border: 1px solid #d9d9d9;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+pre code{
+	background-color: #fafafa;
+	color: #3f3f3f;
+	font-size: 11px;
+	padding: 0;
+}
+
+table{
+	-webkit-border-horizontal-spacing: 1px;
+	-webkit-border-vertical-spacing: 1px;
+	background: #f3f3f3;
+	width: 100%;
+	margin: 0 0 26px 0; 
+}
+
+td,
+th{
+	background: #fff;
+	padding: 2px;
+}
+
+th{
+	background: #f3f3f3;
+}
+
+td{
+	vertical-align: top;
+}
+
+/* Page styles */
+
+body{
+	margin: 24px;
+	background: #251d1f; 
+}
+
+/* full screen */
+/*
+#container{
+	background: #fff; 
+	width: 616px;
+	height: 1112px;
+	padding: 12px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 8px;
+}
+*/
+
+/* iPhone 5 lockscreen with padding*/
+#container{
+	background: #fff; 
+	width: 616px;
+	height: 713px;
+	padding: 232px 12px 191px 12px; 
+	-webkit-column-count: 3;
+	-webkit-column-gap: 8px;
+}
+
+#canvas-stage{
+	height: 0;
+	visibility: hidden;
+}
+
+h1.landing{
+	color: #fffcdd;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	margin: 0 0 12px 0;
+}
+
+h2.landing{
+	color: #fffcdd;
+	font-size: 24px;
+	margin: 0 0 12px 0;
+}
+
+.column{
+	margin: 0 24px 0 0;
+	float: left;
+}
+

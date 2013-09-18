@@ -7,8 +7,10 @@ Cheatsheet Generator August 2012
 */
 
 require'lib/markdown1.0.1o.php';
+require 'req/function.php';
 
-$file = 'readme.md';
+if(!isset($_GET['file'])) $file = 'readme.md';
+else $file = 'document/'.$_GET['file'];
 
 ?><!doctype html>
 <html>
@@ -21,7 +23,7 @@ $file = 'readme.md';
 <script src="lib/jquery.plugin.html2canvas0.34.js"></script>
 <script>
 $(window).ready(function(){
-	$('#container').html2canvas({
+	$('#original-container').html2canvas({
 		onrendered:function(canvas){
 			$('#canvas-stage').html(canvas);
 			// http://www.html5canvastutorials.com/advanced/html5-canvas-save-drawing-as-an-image/
@@ -35,21 +37,55 @@ $(window).ready(function(){
 	});
 });
 </script>
-
 </head>
 <body>
+<section>
+<header>
 <h1 class="landing">Markdown Cheatsheet Generator</h1>
-<div class="column">
-<h2 class="landing">original</h2>
-<div id="container"><?php
+<h2>Documents:</h2>
+<ul>
+<?php
+
+foreach(dirArray('document') as $key => $markdown_file){
+
+	?>
+
+	<li><a href="/?file=<?php
+
+	echo $markdown_file;
+
+	?>"><?php
+
+	echo $markdown_file;
+
+	?></a></li><?php
+
+}
+
+?>
+
+</ul>
+</header>
+
+<article>
+<header>
+<h2 class="landing">Original</h2>
+</header>
+<div id="original-container"><?php
 
 echo Markdown(file_get_contents($file));
 
-?></div>
-<div id="canvas-stage"></div>
+?>
+
 </div>
-<div class="column"></div>
-<h2 class="landing">rendered cheatsheet</h2>
+</article>
+<article>
+<header>
+<h2 class="landing">Rendered Cheatsheet</h2>
+</header>
+<div id="canvas-stage"></div>
 <img id="canvas-image">
+</article>
+</section>
 </body>
 </html>

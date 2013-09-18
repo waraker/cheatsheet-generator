@@ -1,3 +1,4 @@
+/* Basic rendered cheatsheet styling */
 h1,
 h2,
 h3,
@@ -12,7 +13,7 @@ blockquote{
 
 body{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 20px;
 	color: #575757;
 	margin: 10px 13px 10px 13px;
@@ -22,7 +23,7 @@ a{
 	color: #0069d6;
 }
 
-a: hover{
+a:hover{
 	color: #0050a3;
 	text-decoration: none;
 }
@@ -98,7 +99,8 @@ blockquote p{
 	font-style: italic;
 }
 
-code, pre{
+code,
+pre{
 	font-family: Monaco, Andale Mono, Courier New, monospace;
 }
 
@@ -154,6 +156,7 @@ td{
 	vertical-align: top;
 }
 
+
 /* Page styles */
 
 body{
@@ -163,7 +166,7 @@ body{
 
 /* full screen */
 /*
-#container{
+#original-container{
 	background: #fff; 
 	width: 616px;
 	height: 1112px;
@@ -173,8 +176,8 @@ body{
 }
 */
 
-/* iPhone 5 lockscreen with padding*/
-#container{
+/* iPhone 5 lockscreen with padding */
+#original-container{
 	background: #fff; 
 	width: 616px;
 	height: 713px;
@@ -188,21 +191,27 @@ body{
 	visibility: hidden;
 }
 
-h1.landing{
-	color: #fffcdd;
+header h1, header h2{
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #fffcdd;
+}
+
+header h1.landing{
 	font-size: 32px;
 	margin: 0 0 12px 0;
 }
 
-h2.landing{
-	color: #fffcdd;
+header h2.landing{
 	font-size: 24px;
 	margin: 0 0 12px 0;
 }
 
-.column{
+header ul{
+	color: #fffcdd;
+	font-size: 16px;
+}
+
+article{
 	margin: 0 24px 0 0;
 	float: left;
 }
-

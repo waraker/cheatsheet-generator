@@ -1,6 +1,10 @@
 # Markdown Cheatsheet Generator WIP
 
-Convert Markdown files into `.png` image cheatsheets. Currently setup for a iPhone 5 lockscreen wallpaper (640x1136) with top and bottom padding. Text content set into three columns.
+Convert Markdown files into `.png` image cheatsheets.
+
+Currently setup for a iPhone 5 lock screen wallpaper (640x1136) with top and bottom padding. Text content set into three columns.
+
+Markdown files are converted into a canvas element, this is then rendered as a `.png`.
 
 ## Browser compatibility
 

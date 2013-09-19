@@ -1,5 +1,7 @@
 # Markdown Cheatsheet Generator WIP
 
+NOTE: iOS7 breaks the ability to have pixel perfect background images.
+
 Convert Markdown files into `.png` image cheatsheets.
 
 Currently setup for a iPhone 5 lock screen wallpaper (640x1136) with top and bottom padding. Text content set into three columns.
